@@ -11,8 +11,8 @@ import 'package:just_the_tooltip/src/tooltip_overlay.dart';
 
 /// A widget to display a tooltip over target widget. The tooltip can be
 /// displayed on any axis of the widget and fallback to the opposite axis if
-/// the tooltip does cannot fit its content. The tooltip can will be dismissed
-/// by waiting a specified time or again tapping on the target widger or
+/// the tooltip cannot fit its content. The tooltip will be dismissed
+/// by waiting a specified time or by tapping again on the target widget or
 /// anywhere on the screen.
 ///
 /// Keep in mind there are different behaviours for the tooltip when [isModal]
@@ -119,7 +119,7 @@ class JustTheTooltip extends StatefulWidget {
 
   /// If true, once the tooltip is opened, it will not close after a set
   /// duration. It will instead instead stay on the screen until either the
-  /// `scrim` is clicked or it is forcibly closed
+  /// `scrim` is clicked or it is forcibly closed.
   final bool isModal;
 
   /// The length of time that a pointer must hover over a tooltip's widget
